@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .message-bubble {
+    @apply relative px-4 py-2 rounded-2xl max-w-xs break-words;
+  }
+
+  .message-bubble::before {
+    content: "";
+    @apply absolute w-0 h-0;
+  }
+
+  .message-bubble-sent {
+    @apply bg-blue-600 text-white;
+  }
+
+  .message-bubble-sent::before {
+    @apply border-l-blue-600;
+    border-left: 8px solid;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    right: -8px;
+    bottom: 8px;
+  }
+
+  .message-bubble-received {
+    @apply bg-white text-gray-900 shadow-sm;
+  }
+
+  .message-bubble-received::before {
+    @apply border-r-white;
+    border-right: 8px solid;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    left: -8px;
+    bottom: 8px;
+  }
+}
