@@ -1,5 +1,5 @@
 {
-  "name": "my-v0-project",
+  "name": "realtime-chat-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -54,7 +54,6 @@
     "react-hook-form": "latest",
     "react-resizable-panels": "latest",
     "recharts": "latest",
-    "shadcn": "latest",
     "sonner": "latest",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
