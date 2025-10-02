@@ -1,0 +1,2 @@
+[2025-08-21T10:40:45.000Z] Planned change: Integrate Supabase Auth Provider in app/layout.tsx to wrap the app with SupabaseProvider for authentication context.
+[2025-08-21T10:41:27.000Z] Planned change: Add error logging to login page to track authentication errors.
